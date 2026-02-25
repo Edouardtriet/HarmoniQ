@@ -107,10 +107,10 @@ export function Footer() {
 
               {/* Social links */}
               <div className="flex items-center gap-4 pt-4">
-                <button className="w-10 h-10 rounded-full glass hover:bg-primary/10 flex items-center justify-center transition-all duration-300 hover:scale-110 focus-enhanced">
+                <button aria-label="LinkedIn" className="w-10 h-10 rounded-full glass hover:bg-primary/10 flex items-center justify-center transition-all duration-300 hover:scale-110 focus-enhanced">
                   <Linkedin className="w-5 h-5 text-muted-foreground hover:text-primary transition-colors" />
                 </button>
-                <button className="w-10 h-10 rounded-full glass hover:bg-primary/10 flex items-center justify-center transition-all duration-300 hover:scale-110 focus-enhanced">
+                <button aria-label="X (Twitter)" className="w-10 h-10 rounded-full glass hover:bg-primary/10 flex items-center justify-center transition-all duration-300 hover:scale-110 focus-enhanced">
                   <Twitter className="w-5 h-5 text-muted-foreground hover:text-primary transition-colors" />
                 </button>
               </div>
@@ -146,7 +146,7 @@ export function Footer() {
           {/* Enhanced Bottom Section */}
           <div className="flex flex-col lg:flex-row justify-between items-center pt-8 border-t border-primary/10 gap-6">
             <div className="text-sm text-muted-foreground">
-              © 2025 HarmoniQ Technologies Ltd. All rights reserved. | Registered in the United Kingdom
+              © {new Date().getFullYear()} HarmoniQ Technologies Ltd. All rights reserved. | Registered in the United Kingdom
             </div>
             
             <div className="flex items-center gap-8">
@@ -166,12 +166,12 @@ export function Footer() {
 
           {/* Additional trust indicators */}
           <div className="mt-8 pt-8 border-t border-primary/10 text-center">
-            <div className="glass px-6 py-4 rounded-full inline-block">
-              <div className="flex items-center gap-4 text-sm text-muted-foreground">
+            <div className="glass px-6 py-4 rounded-full sm:inline-block">
+              <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-sm text-muted-foreground">
                 <span>🔒 Enterprise-grade security</span>
-                <div className="w-1 h-1 bg-muted-foreground rounded-full"></div>
+                <div className="hidden sm:block w-1 h-1 bg-muted-foreground rounded-full"></div>
                 <span>⚡ Patented technology</span>
-                <div className="w-1 h-1 bg-muted-foreground rounded-full"></div>
+                <div className="hidden sm:block w-1 h-1 bg-muted-foreground rounded-full"></div>
                 <span>🌍 Serving EMEA markets</span>
               </div>
             </div>

@@ -491,6 +491,7 @@
     font-size: var(--font-size);
     font-family: var(--font-family);
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
   }
 
   body {
@@ -5619,5 +5620,16 @@
   to {
     opacity: var(--tw-exit-opacity, 1);
     transform: translate3d(var(--tw-exit-translate-x, 0), var(--tw-exit-translate-y, 0), 0) scale3d(var(--tw-exit-scale, 1), var(--tw-exit-scale, 1), var(--tw-exit-scale, 1)) rotate(var(--tw-exit-rotate, 0));
+  }
+}
+
+/* Respect reduced motion preferences for decorative animations */
+@media (prefers-reduced-motion: reduce) {
+  .animate-infinite-scroll,
+  .float-animation,
+  .magnetic-wave-enhanced,
+  .rotate-gentle,
+  .pulse-glow-enhanced {
+    animation: none;
   }
 }

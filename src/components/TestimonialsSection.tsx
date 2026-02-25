@@ -202,24 +202,20 @@ export function TestimonialsSection() {
   // Handle wheel scrolling (trackpad and mouse wheel)
   const handleWheel = (e: React.WheelEvent) => {
     if (!scrollContainerRef.current) return;
-    e.preventDefault();
-    setIsPaused(true);
-    setIsUserScrolling(true);
-    
-    // Handle horizontal scrolling
-    if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
-      scrollContainerRef.current.scrollLeft += e.deltaX;
-    } else {
-      // Convert vertical scroll to horizontal
-      scrollContainerRef.current.scrollLeft += e.deltaY;
-    }
 
-    // Resume auto-scroll after user stops
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    timeoutRef.current = setTimeout(() => {
-      setIsPaused(false);
-      setIsUserScrolling(false);
-    }, 3000);
+    // Only intercept horizontal scroll gestures, let vertical scroll pass through
+    if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+      setIsPaused(true);
+      setIsUserScrolling(true);
+      scrollContainerRef.current.scrollLeft += e.deltaX;
+
+      // Resume auto-scroll after user stops
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      timeoutRef.current = setTimeout(() => {
+        setIsPaused(false);
+        setIsUserScrolling(false);
+      }, 3000);
+    }
   };
 
   const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1024);
@@ -248,7 +244,7 @@ export function TestimonialsSection() {
   }, []);
 
   return (
-    <section className="pt-8 pb-24 bg-gradient-to-br from-white/90 to-green-50/40 overflow-hidden">
+    <section className="pt-8 pb-12 md:pb-24 bg-gradient-to-br from-white/90 to-green-50/40 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <div className="inline-block glass px-4 py-2 rounded-full mb-4">
@@ -277,8 +273,8 @@ export function TestimonialsSection() {
             </div>
           </div>
 
-          <div className="relative">
-            <div 
+          <div className="relative overflow-x-hidden">
+            <div
               ref={scrollContainerRef}
               className="overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing"
               style={{ 
@@ -295,7 +291,6 @@ export function TestimonialsSection() {
               onTouchEnd={handleTouchEnd}
               onWheel={handleWheel}
               onMouseEnter={() => !isUserScrolling && setIsPaused(true)}
-              onMouseLeave={() => !isUserScrolling && setIsPaused(false)}
             >
               <div 
                 ref={containerRef}
@@ -405,8 +400,8 @@ export function TestimonialsSection() {
         </div>
 
         {/* Summary Stats */}
-        <motion.div 
-          className="mt-16 text-center"
+        <motion.div
+          className="mt-8 md:mt-16 text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
