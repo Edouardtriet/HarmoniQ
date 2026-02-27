@@ -35,9 +35,7 @@ export default function App() {
           <div id="home">
             <HeroSection />
           </div>
-          <div id="features">
-            <FeaturesSection />
-          </div>
+          <FeaturesSection />
           <CaseStudiesSection />
           <div id="team">
             <TeamSection />
@@ -45,9 +43,7 @@ export default function App() {
           <div id="testimonials">
             <TestimonialsSection />
           </div>
-          <div id="contact">
-            <ContactSection />
-          </div>
+          <ContactSection />
         </main>
         <Footer />
       </div>

@@ -251,7 +251,7 @@ export function HeroSection() {
             <div className="absolute top-12 left-12 glass px-3 py-2 rounded-full shadow-lg">
               <div className="text-xs font-medium text-primary">Magnetic Wave Technology</div>
             </div>
-            
+
             <div className="absolute top-20 right-16 glass px-3 py-2 rounded-full shadow-lg">
               <div className="text-xs font-medium text-green-600">Free Pilot Available</div>
             </div>
