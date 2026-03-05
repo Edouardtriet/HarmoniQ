@@ -28,7 +28,7 @@ export function FeaturesSection() {
       title: "Pure 50 / 60 Hz Electric Current",
       description: "Uses magnetic waves to compress noise into pure 50 / 60 Hz electric current for optimal power quality and efficiency.",
       benefit: "Up to 25% energy reduction",
-      color: "text-green-600"
+      color: "text-primary"
     },
     {
       icon: Gauge,
@@ -122,7 +122,7 @@ export function FeaturesSection() {
 
   return (
     <>
-      <section id="features" className="pt-20 pb-8 bg-gradient-to-br from-white/80 to-green-50/30">
+      <section id="features" className="pt-20 pb-8 bg-white/80">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="inline-block glass px-4 py-2 rounded-full mb-4">
@@ -143,7 +143,7 @@ export function FeaturesSection() {
             {features.map((feature, index) => (
               <Card key={index} className="glass border-none hover-3d">
                 <CardContent className="p-6">
-                  <div className={`w-16 h-16 rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center mb-4 ${feature.color}`}>
+                  <div className={`w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-4 ${feature.color}`}>
                     {typeof feature.icon === 'function' ? <feature.icon /> : <feature.icon className="w-8 h-8" />}
                   </div>
                   <h3 className="font-medium mb-2">{feature.title}</h3>
@@ -202,7 +202,7 @@ export function FeaturesSection() {
                   </div>
 
                   <CardContent className="p-6 text-center flex flex-col h-full">
-                    <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary to-green-600 flex items-center justify-center mx-auto mb-4 text-white">
+                    <div className="w-16 h-16 rounded-xl bg-primary flex items-center justify-center mx-auto mb-4 text-white">
                       <market.icon className="w-8 h-8" />
                     </div>
                     <h4 className="font-medium mb-2">{market.title}</h4>

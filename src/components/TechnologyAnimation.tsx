@@ -765,7 +765,7 @@ function DeviceControl({
                           repeatType: "reverse",
                         }}
                       />
-                      <span className="text-xs text-emerald-300 font-medium tracking-wide">
+                      <span className="text-xs text-primary font-medium tracking-wide">
                         {indicator.label}
                       </span>
                     </div>
@@ -801,13 +801,13 @@ function DeviceControl({
                   }}
                 >
                   <div className="text-xs space-y-2 relative z-10">
-                    <div className="text-emerald-300 font-medium">
+                    <div className="text-primary font-medium">
                       Input:{" "}
                       <span className="text-slate-100 font-mono">
                         &lt;600V
                       </span>
                     </div>
-                    <div className="text-emerald-300 font-medium flex items-center gap-1">
+                    <div className="text-primary font-medium flex items-center gap-1">
                       THD:{" "}
                       <span className="text-slate-100 font-mono">
                         <AnimatedValue
@@ -841,7 +841,7 @@ function DeviceControl({
                         ↓
                       </motion.span>
                     </div>
-                    <div className="text-emerald-300 font-medium flex items-center gap-1">
+                    <div className="text-primary font-medium flex items-center gap-1">
                       PF:{" "}
                       <span className="text-slate-100 font-mono">
                         <AnimatedValue
@@ -855,7 +855,7 @@ function DeviceControl({
                         />
                       </span>
                       <motion.span
-                        className="text-green-400"
+                        className="text-primary"
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={
                           isOn

@@ -150,10 +150,10 @@ export function TechnologyComparison() {
         </div>
 
         <div className="flex gap-4 justify-center">
-          <Badge className="px-4 py-2 text-sm" style={{ backgroundColor: '#00A980', color: 'white', borderColor: '#00A980' }}>
+          <Badge className="bg-primary text-white border-primary px-4 py-2 text-sm">
             Pure 50 / 60 Hz
           </Badge>
-          <Badge className="px-4 py-2 text-sm" style={{ backgroundColor: '#00A980', color: 'white', borderColor: '#00A980' }}>
+          <Badge className="bg-primary text-white border-primary px-4 py-2 text-sm">
             Optimal Temperature
           </Badge>
         </div>

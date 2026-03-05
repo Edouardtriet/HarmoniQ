@@ -244,7 +244,7 @@ export function TestimonialsSection() {
   }, []);
 
   return (
-    <section className="pt-8 pb-12 md:pb-24 bg-gradient-to-br from-white/90 to-green-50/40 overflow-hidden">
+    <section className="pt-8 pb-12 md:pb-24 bg-white/90 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <div className="inline-block glass px-4 py-2 rounded-full mb-4">

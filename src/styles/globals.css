@@ -269,21 +269,15 @@
   }
   
   .gradient-text {
-    background-image: var(--gradient-green);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--primary);
     font-weight: 600;
     line-height: 1.4;
     display: inline-block;
     padding-bottom: 4px;
   }
-  
+
   .gradient-energy {
-    background-image: var(--gradient-energy);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--primary);
     font-weight: 600;
   }
   
@@ -325,7 +319,7 @@
   }
   
   .btn-primary {
-    background: linear-gradient(135deg, #00A980, #00cc9a);
+    background: var(--primary);
     border: 1px solid rgba(0, 169, 128, 0.3);
     color: #ffffff;
     font-weight: 600;
@@ -351,7 +345,7 @@
   }
   
   .btn-primary:hover {
-    background: linear-gradient(135deg, #00cc9a, #1ae5b4);
+    background: #008a68;
     box-shadow: 0 8px 25px rgba(0, 169, 128, 0.4);
     transform: translateY(-2px);
   }
@@ -619,9 +613,9 @@
     background: transparent !important;
   }
   
-  /* Keep contact section green background intact */
+  /* Keep contact section background intact */
   [data-theme="dark"] .contact-section {
-    background: linear-gradient(to bottom right, rgba(0, 169, 128, 0.8), rgba(0, 204, 154, 0.8)) !important;
+    background: var(--primary) !important;
   }
   
   /* Ensure contact section buttons maintain their styling in dark mode */

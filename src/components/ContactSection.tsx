@@ -26,7 +26,7 @@ export function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="pt-20 pb-12 bg-gradient-to-br from-primary/80 to-green-600/80 text-white relative overflow-hidden contact-section">
+    <section id="contact" className="pt-20 pb-12 bg-primary text-white relative overflow-hidden contact-section">
       {/* Decorative elements */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.2),transparent_40%)]"></div>
@@ -54,7 +54,7 @@ export function ContactSection() {
                     <feature.icon className="h-6 w-6" />
                   </div>
                   <div className="space-y-1">
-                    <h3 className="font-semibold text-white">{feature.title}</h3>
+                    <h3 className="font-semibold text-white text-base">{feature.title}</h3>
                     <p className="text-sm text-white/70 leading-relaxed">{feature.description}</p>
                   </div>
                 </div>

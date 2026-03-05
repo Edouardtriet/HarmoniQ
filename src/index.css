@@ -534,9 +534,7 @@
   }
 
   .gradient-text {
-    background-image: var(--gradient-green);
-    color: #0000;
-    background-clip: text;
+    color: var(--primary);
     padding-bottom: 4px;
     font-weight: 600;
     line-height: 1.4;
@@ -544,9 +542,7 @@
   }
 
   .gradient-energy {
-    background-image: var(--gradient-energy);
-    color: #0000;
-    background-clip: text;
+    color: var(--primary);
     font-weight: 600;
   }
 
@@ -586,7 +582,7 @@
   .btn-primary {
     color: #fff;
     text-shadow: 0 1px 2px #0000001a;
-    background: linear-gradient(135deg, #00a980, #00cc9a);
+    background: var(--primary);
     border: 1px solid #00a9804d;
     font-weight: 600;
     transition: all .3s cubic-bezier(.22, 1, .36, 1);
@@ -610,7 +606,7 @@
   }
 
   .btn-primary:hover {
-    background: linear-gradient(135deg, #00cc9a, #1ae5b4);
+    background: #008a68;
     transform: translateY(-2px);
     box-shadow: 0 8px 25px #00a98066;
   }
@@ -887,7 +883,7 @@
   }
 
   [data-theme="dark"] .contact-section {
-    background: linear-gradient(to bottom right, #00a980cc, #00cc9acc) !important;
+    background: var(--primary) !important;
   }
 
   [data-theme="dark"] .contact-section .contact-button-light {

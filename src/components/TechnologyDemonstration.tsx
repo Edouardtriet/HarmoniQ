@@ -29,8 +29,8 @@ export function TechnologyDemonstration() {
         
         {/* After - Tech ON */}
         <div className="space-y-4">
-          <div className="bg-green-900/20 rounded-lg p-4 border border-green-500/30">
-            <h4 className="text-green-400 font-medium mb-2 text-center">After: Technology ON</h4>
+          <div className="bg-primary/20 rounded-lg p-4 border border-primary/30">
+            <h4 className="text-primary font-medium mb-2 text-center">After: Technology ON</h4>
             <div className="bg-black/50 rounded-lg p-4">
               <img 
                 src={techOnImage} 
@@ -38,7 +38,7 @@ export function TechnologyDemonstration() {
                 className="w-full h-auto rounded-lg"
               />
             </div>
-            <p className="text-green-300 text-xs mt-2 text-center">
+            <p className="text-primary text-xs mt-2 text-center">
               Pure, clean 50 / 60 Hz current - up to 25% energy savings
             </p>
           </div>
