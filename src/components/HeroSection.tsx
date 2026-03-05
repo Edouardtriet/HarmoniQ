@@ -1,27 +1,7 @@
-import { useRef, useEffect, useState } from "react";
 import { Button } from "./ui/button";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { ChevronRight, Battery, TrendingDown, CheckCircle, Zap, DollarSign, Settings } from "lucide-react";
-import harmoniqLogo from 'figma:asset/6e45135b002ab6bd948c04b5f67cde05cd9cc6d4.png';
-import harmoniqSmallLogo from 'figma:asset/3c270814f6d37ae21663366a29b474ae7dfacfa0.png';
+import { ChevronRight, TrendingDown, CheckCircle, Zap } from "lucide-react";
 
 export function HeroSection() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-  
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => setIsVisible(entry.isIntersecting),
-      { threshold: 0.1 }
-    );
-    
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
-    
-    return () => observer.disconnect();
-  }, []);
-
   const scrollToContact = () => {
     const contactSection = document.querySelector('#contact');
     if (contactSection) {
@@ -30,7 +10,7 @@ export function HeroSection() {
   };
 
   return (
-    <section className="pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden relative">
+    <section className="pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden relative">
       {/* Enhanced background effects */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -top-[40%] -right-[20%] w-[60vw] h-[60vw] rounded-full bg-gradient-to-br from-primary/15 to-green-400/10 blur-3xl opacity-70 pulse-glow-enhanced"></div>
@@ -39,15 +19,15 @@ export function HeroSection() {
       </div>
 
       <div className="container mx-auto relative z-10 px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8 max-w-2xl">
-<div className="space-y-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="space-y-8">
+            <div className="space-y-6">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl tracking-tight font-bold leading-tight">
                 <span className="gradient-text">Reduce Energy Costs </span>
                 <span className="text-foreground">by up to </span>
                 <span className="gradient-text">25%</span>
               </h1>
-              
+
               <p className="text-xl text-muted-foreground leading-relaxed">
                 HarmoniQ's patented magnetic wave technology compresses electrical noise into pure 50 / 60 Hz current,
                 delivering immediate energy savings, real-time current balancing, and harmonic filtering that extends
@@ -55,7 +35,7 @@ export function HeroSection() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8 text-left">
               <div className="flex items-center gap-4 glass p-4 rounded-xl spatial float-animation">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-green-600 text-white flex items-center justify-center shadow-lg">
                   <TrendingDown className="w-6 h-6" />
@@ -78,7 +58,7 @@ export function HeroSection() {
             </div>
 
             {/* Technology Benefits */}
-            <div className="glass p-6 rounded-2xl border border-primary/20 spatial">
+            <div className="glass p-6 rounded-2xl border border-primary/20 spatial text-left">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-green-400 flex items-center justify-center">
                   <Zap className="w-4 h-4 text-black" />
@@ -112,6 +92,10 @@ export function HeroSection() {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-500" />
+                    <span className="text-sm">Zero downtime installation</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500" />
                     <span className="text-sm">Free pilot projects available</span>
                   </div>
                 </div>
@@ -119,7 +103,7 @@ export function HeroSection() {
             </div>
 
             {/* Call-to-action buttons - moved here */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-6">
+            <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center">
               <Button 
                 size="lg" 
                 onClick={scrollToContact}
@@ -129,91 +113,6 @@ export function HeroSection() {
                 <span>Start Free Pilot</span>
                 <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-            </div>
-          </div>
-          
-          {/* Enhanced Technology Visualization */}
-          <div 
-            ref={containerRef}
-            className="mx-auto w-full max-w-[600px] aspect-square relative select-none"
-          >
-            {/* Enhanced magnetic wave effect */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/30 via-green-400/20 to-green-500/30 blur-3xl opacity-80 magnetic-wave-enhanced"></div>
-            
-            {/* Main technology container */}
-            <div className="relative w-full h-full rounded-full overflow-hidden glass border-4 border-white/20 shadow-2xl spatial">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-green-400/10"></div>
-              
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="logo-container w-56 h-56 rounded-full bg-gradient-to-br from-black/20 to-black/10 flex items-center justify-center shadow-2xl p-8 glass">
-                  <img 
-                    src={harmoniqSmallLogo} 
-                    alt="HarmoniQ Technologies Logo" 
-                    className="w-full h-full object-contain harmoniq-logo"
-                  />
-                </div>
-              </div>
-              
-              {/* Enhanced rotating rings */}
-              <div className="absolute inset-8 rounded-full border-2 border-gradient-to-r from-primary/40 to-green-400/40 rotate-gentle" style={{ animationDuration: '25s' }}></div>
-              <div className="absolute inset-16 rounded-full border border-primary/30 rotate-gentle" style={{ animationDuration: '20s', animationDirection: 'reverse' }}></div>
-              <div className="absolute inset-24 rounded-full border border-green-400/20 rotate-gentle" style={{ animationDuration: '30s' }}></div>
-            </div>
-            
-            {/* Enhanced floating feature cards - focused on technology benefits */}
-            <div className="absolute -top-6 -right-6 glass p-4 rounded-xl shadow-xl spatial hover:scale-105 float-animation">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white shadow-lg">
-                  <TrendingDown className="w-5 h-5" />
-                </div>
-                <div>
-                  <div className="text-sm font-semibold">Up to 25% Savings</div>
-                  <div className="text-xs text-muted-foreground">Energy Reduction</div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="absolute -bottom-6 -left-6 glass p-4 rounded-xl shadow-xl spatial hover:scale-105 float-animation">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-200 to-green-300 flex items-center justify-center text-white shadow-lg p-1">
-                  <div className="logo-container w-full h-full">
-                    <img 
-                      src={harmoniqSmallLogo} 
-                      alt="HarmoniQ Technologies Logo" 
-                      className="w-full h-full object-contain harmoniq-logo"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <div className="text-sm font-semibold">Power Factor = 1</div>
-                  <div className="text-xs text-muted-foreground">Optimal Efficiency</div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="absolute -bottom-6 right-12 glass p-4 rounded-xl shadow-xl spatial hover:scale-105 float-animation">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white shadow-lg">
-                  <Settings className="w-5 h-5" />
-                </div>
-                <div>
-                  <div className="text-sm font-semibold">Equipment Life</div>
-                  <div className="text-xs text-muted-foreground">Extended Lifespan</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Technology indicators - benefit focused */}
-            <div className="absolute top-12 left-12 glass px-3 py-2 rounded-full shadow-lg">
-              <div className="text-xs font-medium text-primary">Magnetic Wave Technology</div>
-            </div>
-
-            <div className="absolute top-20 right-16 glass px-3 py-2 rounded-full shadow-lg">
-              <div className="text-xs font-medium text-green-600">Free Pilot Available</div>
-            </div>
-
-            <div className="absolute bottom-20 left-16 glass px-3 py-2 rounded-full shadow-lg">
-              <div className="text-xs font-medium text-blue-600">Zero Downtime Install</div>
             </div>
           </div>
         </div>
