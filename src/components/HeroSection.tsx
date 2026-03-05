@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { ChevronRight, Battery, TrendingDown, CheckCircle, Zap, ArrowRight, DollarSign, Settings } from "lucide-react";
+import { ChevronRight, Battery, TrendingDown, CheckCircle, Zap, DollarSign, Settings } from "lucide-react";
 import harmoniqLogo from 'figma:asset/6e45135b002ab6bd948c04b5f67cde05cd9cc6d4.png';
 import harmoniqSmallLogo from 'figma:asset/3c270814f6d37ae21663366a29b474ae7dfacfa0.png';
 
@@ -29,13 +29,6 @@ export function HeroSection() {
     }
   };
 
-  const scrollToFeatures = () => {
-    const featuresSection = document.querySelector('#features');
-    if (featuresSection) {
-      featuresSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden relative">
       {/* Enhanced background effects */}
@@ -48,46 +41,18 @@ export function HeroSection() {
       <div className="container mx-auto relative z-10 px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8 max-w-2xl">
-            <div className="inline-block glass px-6 py-3 rounded-full spatial hover:scale-105">
-              <span className="text-sm text-primary font-medium flex items-center gap-3">
-                <div className="logo-container w-8 h-8">
-                  <img 
-                    src={harmoniqSmallLogo} 
-                    alt="HarmoniQ Technologies Logo" 
-                    className="w-full h-full object-contain harmoniq-logo"
-                  />
-                </div>
-                HarmoniQ Technologies
-              </span>
-            </div>
-
-            <div className="space-y-6">
+<div className="space-y-6">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl tracking-tight font-bold leading-tight">
-                <span className="gradient-text block mb-2">Reduce Energy Costs</span>
+                <span className="gradient-text">Reduce Energy Costs </span>
                 <span className="text-foreground">by up to </span>
                 <span className="gradient-text">25%</span>
               </h1>
               
-              <div className="space-y-4">
-                <p className="text-xl text-muted-foreground leading-relaxed">
-                  HarmoniQ's patented magnetic wave technology compresses electrical noise into pure 50 / 60 Hz current, 
-                  delivering immediate energy savings for high-energy facilities across EMEA markets.
-                </p>
-                
-                <div className="glass p-4 rounded-xl border border-primary/20">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
-                      <Zap className="w-3 h-3 text-primary" />
-                    </div>
-                    <span className="text-sm font-medium text-primary">How it works:</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    Our technology uses magnetic waves to compress noise into pure 50 / 60 Hz electric current, 
-                    providing real-time current balancing and harmonic filtering that extends equipment life 
-                    while reducing maintenance costs.
-                  </p>
-                </div>
-              </div>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                HarmoniQ's patented magnetic wave technology compresses electrical noise into pure 50 / 60 Hz current,
+                delivering immediate energy savings, real-time current balancing, and harmonic filtering that extends
+                equipment life while reducing maintenance costs.
+              </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8">
@@ -163,15 +128,6 @@ export function HeroSection() {
                 <Zap className="mr-2 h-5 w-5" />
                 <span>Start Free Pilot</span>
                 <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                onClick={scrollToFeatures}
-                className="glass rounded-full px-8 py-4 text-lg border-primary/30 hover:bg-primary/5 spatial hover:scale-105 focus-enhanced"
-              >
-                <span>See Technology</span>
-                <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
           </div>
