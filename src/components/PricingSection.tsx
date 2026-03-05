@@ -80,7 +80,7 @@ export function PricingSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {keyAdvantages.map((advantage, index) => (
             <div key={index} className="glass p-6 rounded-2xl text-center hover-3d">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-green-600 flex items-center justify-center mx-auto mb-4 text-white">
+              <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center mx-auto mb-4 text-white">
                 <advantage.icon className="w-6 h-6" />
               </div>
               <h3 className="font-medium mb-2">{advantage.title}</h3>
@@ -104,7 +104,7 @@ export function PricingSection() {
             
             <CardHeader className="text-center pb-4">
               <div className="flex items-center justify-center gap-4 mb-4">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center text-white">
+                <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white">
                   <span className="text-2xl font-medium">01</span>
                 </div>
                 <div className="text-left">
@@ -123,7 +123,7 @@ export function PricingSection() {
                   <div className="text-sm text-muted-foreground">implementation fee</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-medium text-green-600 mb-1">~48% GM</div>
+                  <div className="text-2xl font-medium text-primary mb-1">~48% GM</div>
                   <div className="text-sm text-muted-foreground">gross margin</div>
                 </div>
               </div>
@@ -184,7 +184,7 @@ export function PricingSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div className="glass p-8 rounded-2xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center text-white">
+              <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white">
                 <span className="text-xl font-medium">02</span>
               </div>
               <h3 className="text-xl font-medium">Accelerated Sales Cycle</h3>
@@ -213,7 +213,7 @@ export function PricingSection() {
             <h3 className="text-xl font-medium mb-4">Why Choose Our Rental Model?</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-green-100 text-green-600 dark:bg-green-900/40 dark:text-green-400 flex items-center justify-center">
+                <div className="w-8 h-8 rounded-full bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary flex items-center justify-center">
                   <Clock className="w-4 h-4" />
                 </div>
                 <div>

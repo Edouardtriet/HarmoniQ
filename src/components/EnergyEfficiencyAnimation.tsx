@@ -219,7 +219,7 @@ export function EnergyEfficiencyAnimation() {
                     {[...Array(6)].map((_, i) => (
                       <motion.div
                         key={i}
-                        className="absolute w-1 h-6 bg-gradient-to-t from-transparent via-green-500/60 to-transparent rounded-full"
+                        className="absolute w-1 h-6 bg-gradient-to-t from-transparent via-primary/60 to-transparent rounded-full"
                         style={{
                           top: '20%',
                           left: '50%',
@@ -253,7 +253,7 @@ export function EnergyEfficiencyAnimation() {
               <div className="text-center text-sm mb-2">Installing...</div>
               <div className="h-2 bg-muted/30 rounded-full overflow-hidden">
                 <motion.div
-                  className="h-full bg-gradient-to-r from-primary to-green-500"
+                  className="h-full bg-primary"
                   initial={{ width: "0%" }}
                   animate={{ width: "100%" }}
                   transition={{ duration: 3.5, ease: "easeInOut" }}
@@ -275,31 +275,31 @@ export function EnergyEfficiencyAnimation() {
 
         {/* After Panel */}
         <div className={`glass p-6 rounded-2xl transition-all duration-500 ${
-          animationPhase === 2 ? 'border-green-500/50 bg-green-500/5' : 'opacity-60'
+          animationPhase === 2 ? 'border-primary/50 bg-primary/5' : 'opacity-60'
         }`}>
           <div className="text-center mb-4">
-            <h4 className="font-semibold text-green-500 mb-2">After HarmoniQ</h4>
+            <h4 className="font-semibold text-primary mb-2">After HarmoniQ</h4>
             <currentIndustry.icon className={`w-12 h-12 mx-auto mb-3 ${currentIndustry.color}`} />
             <p className="text-sm text-muted-foreground">{currentIndustry.name}</p>
           </div>
 
           {/* Improved Power Meter */}
           <div className="relative mb-4">
-            <div className="glass p-4 rounded-xl bg-green-500/10">
+            <div className="glass p-4 rounded-xl bg-primary/10">
               <div className="flex items-center justify-between mb-2">
-                <Gauge className="w-5 h-5 text-green-500" />
+                <Gauge className="w-5 h-5 text-primary" />
                 <span className="text-sm font-medium">Power Draw</span>
               </div>
               <div className="relative h-4 bg-muted/30 rounded-full overflow-hidden">
                 <motion.div
-                  className="h-full bg-gradient-to-r from-green-500 to-emerald-500"
+                  className="h-full bg-primary"
                   animate={{ width: animationPhase === 2 ? "75%" : "0%" }}
                   transition={{ duration: 1, ease: "easeInOut" }}
                 />
               </div>
               <div className="flex justify-between text-xs text-muted-foreground mt-1">
                 <span>0 kWh</span>
-                <span className="font-medium text-green-500">{currentIndustry.afterKwh} kWh/day</span>
+                <span className="font-medium text-primary">{currentIndustry.afterKwh} kWh/day</span>
               </div>
             </div>
           </div>
@@ -307,11 +307,11 @@ export function EnergyEfficiencyAnimation() {
           {/* Efficiency Indicators */}
           <div className="space-y-2">
             <div className="flex items-center gap-2 text-sm">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+              <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
               <span>Pure 50 / 60 Hz Current</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
-              <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
+              <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
               <span>No Harmonics</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
@@ -323,13 +323,13 @@ export function EnergyEfficiencyAnimation() {
       </div>
 
       {/* Savings Calculator */}
-      <div className="glass p-6 rounded-2xl bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20">
+      <div className="glass p-6 rounded-2xl bg-primary/10 border border-primary/20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           
           {/* Energy Savings */}
           <div className="text-center">
             <div className="flex items-center justify-center gap-2 mb-2">
-              <TrendingDown className="w-5 h-5 text-green-500" />
+              <TrendingDown className="w-5 h-5 text-primary" />
               <span className="font-semibold">Energy Saved</span>
             </div>
             <AnimatePresence mode="wait">
@@ -340,7 +340,7 @@ export function EnergyEfficiencyAnimation() {
                 exit={{ opacity: 0, y: -10 }}
                 className="space-y-1"
               >
-                <div className="text-2xl font-bold text-green-500">
+                <div className="text-2xl font-bold text-primary">
                   {animationPhase === 2 ? `${currentIndustry.savings}` : '0'} kWh
                 </div>
                 <div className="text-sm text-muted-foreground">per day</div>
@@ -419,7 +419,7 @@ export function EnergyEfficiencyAnimation() {
         <div className="mt-6 pt-6 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
             <strong>50 / 60 Hz Technology:</strong> Magnetic wave compression eliminates electrical noise and harmonics, 
-            delivering up to <span className="text-green-500 font-semibold">25% energy savings</span> for high-energy facilities
+            delivering up to <span className="text-primary font-semibold">25% energy savings</span> for high-energy facilities
           </p>
         </div>
       </div>

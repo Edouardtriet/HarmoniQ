@@ -20,9 +20,9 @@ export function UnifiedTechnologyDemo() {
             />
             {/* Magnetic Field Waves */}
             <div className="absolute -top-2 -left-8 w-48 h-24">
-              <div className="absolute inset-0 border-2 border-green-400/30 rounded-full animate-ping"></div>
-              <div className="absolute inset-2 border-2 border-green-400/20 rounded-full animate-ping" style={{animationDelay: '0.5s'}}></div>
-              <div className="absolute inset-4 border-2 border-green-400/10 rounded-full animate-ping" style={{animationDelay: '1s'}}></div>
+              <div className="absolute inset-0 border-2 border-primary/30 rounded-full animate-ping"></div>
+              <div className="absolute inset-2 border-2 border-primary/20 rounded-full animate-ping" style={{animationDelay: '0.5s'}}></div>
+              <div className="absolute inset-4 border-2 border-primary/10 rounded-full animate-ping" style={{animationDelay: '1s'}}></div>
             </div>
           </div>
         </div>
@@ -48,13 +48,13 @@ export function UnifiedTechnologyDemo() {
           {/* Process Arrow */}
           <div className="text-center">
             <div className="flex flex-col items-center">
-              <div className="text-green-400 mb-1">
+              <div className="text-primary mb-1">
                 <svg width="30" height="15" viewBox="0 0 30 15" fill="currentColor">
                   <path d="M5,7.5 L20,7.5 L17,5 M20,7.5 L17,10" stroke="currentColor" strokeWidth="2" fill="none"/>
                 </svg>
               </div>
-              <p className="text-green-300 text-xs font-medium">Processing</p>
-              <div className="text-green-400 mt-1">
+              <p className="text-primary text-xs font-medium">Processing</p>
+              <div className="text-primary mt-1">
                 <svg width="30" height="15" viewBox="0 0 30 15" fill="currentColor">
                   <path d="M5,7.5 L20,7.5 L17,5 M20,7.5 L17,10" stroke="currentColor" strokeWidth="2" fill="none"/>
                 </svg>
@@ -64,11 +64,11 @@ export function UnifiedTechnologyDemo() {
           
           {/* Output - Clean Power */}
           <div className="text-center">
-            <div className="bg-green-900/30 rounded-lg p-3 border border-green-500/30 mb-3">
-              <h4 className="text-green-400 font-medium mb-2 text-sm">OUTPUT: Pure 50 / 60 Hz</h4>
+            <div className="bg-primary/20 rounded-lg p-3 border border-primary/30 mb-3">
+              <h4 className="text-primary font-medium mb-2 text-sm">OUTPUT: Pure 50 / 60 Hz</h4>
               <div className="h-12 flex items-center justify-center bg-black/50 rounded-lg">
                 {/* Smooth Wave SVG */}
-                <svg width="100" height="48" viewBox="0 0 100 48" className="text-green-400">
+                <svg width="100" height="48" viewBox="0 0 100 48" className="text-primary">
                   <path 
                     d="M5,24 Q20,8 35,24 T65,24 Q80,8 95,24" 
                     stroke="currentColor" 
@@ -78,7 +78,7 @@ export function UnifiedTechnologyDemo() {
                   />
                 </svg>
               </div>
-              <p className="text-green-300 text-xs mt-1">Clean, efficient power</p>
+              <p className="text-primary text-xs mt-1">Clean, efficient power</p>
             </div>
           </div>
         </div>

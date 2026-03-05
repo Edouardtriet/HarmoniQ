@@ -325,7 +325,7 @@ export function CaseStudiesSection() {
   const selectedCaseData = caseStudies.find(c => c.id === selectedCase);
 
   return (
-    <section id="case-studies-section" className="pt-20 pb-16 bg-gradient-to-br from-white/90 to-green-50/20">
+    <section id="case-studies-section" className="pt-20 pb-16 bg-white/90">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 print:hidden">
           <div className="inline-block glass px-4 py-2 rounded-full mb-4">
@@ -352,7 +352,7 @@ export function CaseStudiesSection() {
               onClick={() => handleCaseClick(caseStudy.id)}
             >
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary to-[#00cc9a] flex items-center justify-center mx-auto mb-4 text-white">
+                <div className="w-16 h-16 rounded-xl bg-primary flex items-center justify-center mx-auto mb-4 text-white">
                   <caseStudy.icon className="w-8 h-8" />
                 </div>
                 <h4 className="font-medium mb-2">
@@ -411,7 +411,7 @@ export function CaseStudiesSection() {
                     </div>
                     
                     <div className="flex items-start gap-6 mb-8">
-                      <div className="w-24 h-24 rounded-xl bg-gradient-to-br from-primary to-[#00cc9a] flex items-center justify-center text-white flex-shrink-0">
+                      <div className="w-24 h-24 rounded-xl bg-primary flex items-center justify-center text-white flex-shrink-0">
                         <selectedCaseData.icon className="w-12 h-12" />
                       </div>
                       <div className="flex-grow pr-68">
@@ -452,7 +452,7 @@ export function CaseStudiesSection() {
                         <ul className="space-y-3">
                           {selectedCaseData.solutions.map((solution, index) => (
                             <li key={index} className="text-base text-muted-foreground leading-relaxed flex items-start">
-                              <span className="w-2 h-2 rounded-full bg-green-500 flex-shrink-0 mt-2 mr-3"></span>
+                              <span className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2 mr-3"></span>
                               {solution}
                             </li>
                           ))}
@@ -591,10 +591,10 @@ export function CaseStudiesSection() {
                               </BarChart>
                             </ResponsiveContainer>
                             <div className="mt-4 flex justify-center">
-                              <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-50 rounded-full border border-green-200">
-                                <TrendingDown className="w-4 h-4 text-green-600" />
-                                <span className="font-medium text-green-800">15.4% Savings</span>
-                                <span className="text-green-600">($5,000/month)</span>
+                              <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/5 rounded-full border border-primary/20">
+                                <TrendingDown className="w-4 h-4 text-primary" />
+                                <span className="font-medium text-primary">15.4% Savings</span>
+                                <span className="text-primary">($5,000/month)</span>
                               </div>
                             </div>
                           </div>
@@ -671,7 +671,7 @@ export function CaseStudiesSection() {
                           </div>
                           <div className="text-center mt-4">
                             <div className="text-base text-muted-foreground">Energy Savings</div>
-                            <div className="text-lg font-bold text-green-600">12-20%</div>
+                            <div className="text-lg font-bold text-primary">12-20%</div>
                           </div>
                         </CardContent>
                       </Card>
@@ -779,13 +779,13 @@ export function CaseStudiesSection() {
                           </h4>
                           <div className="space-y-4">
                             <div className="flex items-start gap-3">
-                              <span className="w-2 h-2 rounded-full bg-green-500 flex-shrink-0 mt-2"></span>
+                              <span className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2"></span>
                               <span className="text-base text-muted-foreground leading-relaxed">
                                 The solution is relevant across the Oil & Gas industry, including pipeline pumps, compressors, and electric motors in midstream operations. It enhances reliability and efficiency in oil and gas transport and processing.
                               </span>
                             </div>
                             <div className="flex items-start gap-3">
-                              <span className="w-2 h-2 rounded-full bg-green-500 flex-shrink-0 mt-2"></span>
+                              <span className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2"></span>
                               <span className="text-base text-muted-foreground">
                                 HarmoniQ provides an advanced dynamic harmonic power filter designed for DC variable frequency drives, reducing Total Harmonic Distortion and achieving significant electricity bill savings.
                               </span>
@@ -802,19 +802,19 @@ export function CaseStudiesSection() {
                           </h4>
                           <div className="space-y-4">
                             <div className="flex items-start gap-3">
-                              <span className="w-2 h-2 rounded-full bg-green-500 flex-shrink-0 mt-2"></span>
+                              <span className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2"></span>
                               <span className="text-base text-muted-foreground">
                                 HarmoniQ will cover the initial cost of: Equipment (power tuning, metering, enclosure) and installation costs (electrician, pad, mounting).
                               </span>
                             </div>
                             <div className="flex items-start gap-3">
-                              <span className="w-2 h-2 rounded-full bg-green-500 flex-shrink-0 mt-2"></span>
+                              <span className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2"></span>
                               <span className="text-base text-muted-foreground">
                                 Long-term energy saving contract to split utility bill savings (peak demand, energy consumption and power factor charge).
                               </span>
                             </div>
                             <div className="flex items-start gap-3">
-                              <span className="w-2 h-2 rounded-full bg-green-500 flex-shrink-0 mt-2"></span>
+                              <span className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2"></span>
                               <span className="text-base text-muted-foreground">
                                 HarmoniQ manages all billing
                               </span>
@@ -874,11 +874,11 @@ export function CaseStudiesSection() {
                   <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
                     <Card className="glass border-none">
                       <CardContent className="p-6 text-center">
-                        <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
-                          <TrendingDown className="w-6 h-6 text-green-600" />
+                        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                          <TrendingDown className="w-6 h-6 text-primary" />
                         </div>
                         <h4 className="font-medium mb-2">Energy Reduction</h4>
-                        <p className="text-2xl font-bold text-green-600 mb-2">{selectedCaseData.metrics.energyReduction}</p>
+                        <p className="text-2xl font-bold text-primary mb-2">{selectedCaseData.metrics.energyReduction}</p>
                         <p className="text-sm text-muted-foreground">Measured savings achieved</p>
                       </CardContent>
                     </Card>
@@ -913,7 +913,7 @@ export function CaseStudiesSection() {
                       <ul className="space-y-3">
                         {selectedCaseData.results.map((result, index) => (
                           <li key={index} className="text-base text-muted-foreground leading-relaxed flex items-start">
-                            <span className="w-2 h-2 rounded-full bg-green-500 flex-shrink-0 mt-2 mr-3"></span>
+                            <span className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2 mr-3"></span>
                             {result}
                           </li>
                         ))}

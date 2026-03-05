@@ -77,7 +77,7 @@ export function Navbar() {
               className="relative py-3 px-4 text-base font-medium transition-all duration-300 hover:text-primary group focus-enhanced rounded-xl hover:bg-secondary/20 whitespace-nowrap"
             >
               {item.label}
-              <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-green-400 transition-all duration-300 group-hover:w-3/4 rounded-full"></span>
+              <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-3/4 rounded-full"></span>
             </button>
           ))}
         </nav>

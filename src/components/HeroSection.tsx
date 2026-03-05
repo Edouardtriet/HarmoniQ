@@ -13,9 +13,9 @@ export function HeroSection() {
     <section className="pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden relative">
       {/* Enhanced background effects */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute -top-[40%] -right-[20%] w-[60vw] h-[60vw] rounded-full bg-gradient-to-br from-primary/15 to-green-400/10 blur-3xl opacity-70 pulse-glow-enhanced"></div>
-        <div className="absolute -bottom-[30%] -left-[20%] w-[50vw] h-[50vw] rounded-full bg-gradient-to-tr from-green-600/10 to-primary/15 blur-3xl opacity-70 pulse-glow-enhanced" style={{ animationDelay: '1.5s' }}></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vh] rounded-full bg-gradient-to-r from-primary/5 to-green-400/5 blur-3xl opacity-50"></div>
+        <div className="absolute -top-[40%] -right-[20%] w-[60vw] h-[60vw] rounded-full bg-primary/15 blur-3xl opacity-70 pulse-glow-enhanced"></div>
+        <div className="absolute -bottom-[30%] -left-[20%] w-[50vw] h-[50vw] rounded-full bg-primary/15 blur-3xl opacity-70 pulse-glow-enhanced" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vh] rounded-full bg-primary/5 blur-3xl opacity-50"></div>
       </div>
 
       <div className="container mx-auto relative z-10 px-4">
@@ -37,7 +37,7 @@ export function HeroSection() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8 text-left">
               <div className="flex items-center gap-4 glass p-4 rounded-xl spatial float-animation">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-green-600 text-white flex items-center justify-center shadow-lg">
+                <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg">
                   <TrendingDown className="w-6 h-6" />
                 </div>
                 <div>
@@ -60,7 +60,7 @@ export function HeroSection() {
             {/* Technology Benefits */}
             <div className="glass p-6 rounded-2xl border border-primary/20 spatial text-left">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-green-400 flex items-center justify-center">
+                <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
                   <Zap className="w-4 h-4 text-black" />
                 </div>
                 <span className="font-semibold">Technology Benefits</span>
@@ -69,33 +69,33 @@ export function HeroSection() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <CheckCircle className="w-4 h-4 text-primary" />
                     <span className="text-sm">Pure 50 / 60 Hz electric current</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <CheckCircle className="w-4 h-4 text-primary" />
                     <span className="text-sm">Returns power factor to 1</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <CheckCircle className="w-4 h-4 text-primary" />
                     <span className="text-sm">Real-time power optimization</span>
                   </div>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <CheckCircle className="w-4 h-4 text-primary" />
                     <span className="text-sm">Extends equipment life</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <CheckCircle className="w-4 h-4 text-primary" />
                     <span className="text-sm">Reduces maintenance costs</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <CheckCircle className="w-4 h-4 text-primary" />
                     <span className="text-sm">Zero downtime installation</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <CheckCircle className="w-4 h-4 text-primary" />
                     <span className="text-sm">Free pilot projects available</span>
                   </div>
                 </div>

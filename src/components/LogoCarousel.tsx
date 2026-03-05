@@ -168,7 +168,7 @@ export function LogoCarousel() {
   }, [isDragging]);
 
   return (
-    <div className="py-12 bg-gradient-to-br from-white/90 to-green-50/20 overflow-hidden">
+    <div className="py-12 bg-white/90 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h3 className="text-xl md:text-2xl font-medium mb-4 tracking-tight">

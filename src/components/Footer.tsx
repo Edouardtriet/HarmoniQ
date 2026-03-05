@@ -68,11 +68,11 @@ export function Footer() {
 
   return (
     <>
-      <footer className="bg-gradient-to-br from-white via-green-50/30 to-green-100/20 border-t border-primary/10 relative overflow-hidden">
+      <footer className="bg-white border-t border-primary/10 relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-primary/8 blur-3xl opacity-40"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full bg-green-400/8 blur-3xl opacity-40"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full bg-primary/10 blur-3xl opacity-40"></div>
         </div>
 
         <div className="container mx-auto px-4 py-16">
