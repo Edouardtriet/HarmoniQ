@@ -26,7 +26,6 @@ export function Navbar() {
     { label: "Technology", href: "#features" },
     { label: "Applications", href: "#applications" },
     { label: "Case Studies", href: "#case-studies-section" },
-    { label: "Team", href: "#team" },
     { label: "Contact", href: "#contact" },
   ];
 
