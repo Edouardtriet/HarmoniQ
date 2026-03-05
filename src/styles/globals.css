@@ -662,53 +662,15 @@
     animation-delay: calc(var(--animation-key) * -4s);
   }
   
-  /* Logo carousel animations */
-  @keyframes logoCarousel {
-    0% {
-      transform: translateX(-33.333%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+  /* Logo marquee animation */
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
   }
-  
-  .logo-carousel-container {
-    position: relative;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  .logo-carousel-container::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .logo-carousel-track {
-    animation: logoCarousel 30s linear infinite;
+
+  .marquee-track {
+    animation: marquee 30s linear infinite;
     will-change: transform;
-    transition: transform 0.1s ease-out;
-  }
-  
-  .logo-carousel-track:hover {
-    animation-play-state: paused;
-  }
-  
-  /* Smooth drag cursor styles */
-  .logo-carousel-container.dragging {
-    cursor: grabbing !important;
-    scroll-behavior: auto;
-  }
-  
-  .logo-carousel-container:not(.dragging) {
-    cursor: grab;
-  }
-  
-  /* Touch-friendly scrolling */
-  .logo-carousel-container {
-    touch-action: pan-x;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
   }
   
   /* Hide scrollbars for testimonials */

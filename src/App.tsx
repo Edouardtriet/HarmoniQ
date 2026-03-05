@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
+import { LogoCarousel } from "./components/LogoCarousel";
 import { FeaturesSection } from "./components/FeaturesSection";
 import { CaseStudiesSection } from "./components/CaseStudiesSection";
-import { TeamSection } from "./components/TeamSection";
 import { TestimonialsSection } from "./components/TestimonialsSection";
 import { ContactSection } from "./components/ContactSection";
 import { Footer } from "./components/Footer";
@@ -35,11 +35,9 @@ export default function App() {
           <div id="home">
             <HeroSection />
           </div>
+          <LogoCarousel />
           <FeaturesSection />
           <CaseStudiesSection />
-          <div id="team">
-            <TeamSection />
-          </div>
           <div id="testimonials">
             <TestimonialsSection />
           </div>
