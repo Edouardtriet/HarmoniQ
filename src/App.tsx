@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
-import { LogoCarousel } from "./components/LogoCarousel";
 import { FeaturesSection } from "./components/FeaturesSection";
 import { CaseStudiesSection } from "./components/CaseStudiesSection";
 import { TestimonialsSection } from "./components/TestimonialsSection";
@@ -35,7 +34,6 @@ export default function App() {
           <div id="home">
             <HeroSection />
           </div>
-          <LogoCarousel />
           <FeaturesSection />
           <CaseStudiesSection />
           <div id="testimonials">
