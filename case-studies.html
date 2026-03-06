@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Studies — HarmoniQ Technologies</title>
+  <meta name="description" content="Real-world results from HarmoniQ deployments across manufacturing, cold storage, oil & gas, data centers, and more." />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    .cs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+    .cs-card { background: var(--bg-card); overflow: hidden; transition: var(--transition); }
+    .cs-card:hover { background: var(--bg-secondary); }
+    .cs-header { padding: 28px 28px 20px; border-bottom: 1px solid var(--border); }
+    .cs-industry-tag { display: inline-block; padding: 2px 8px; background: var(--accent-dim); border: 1px solid var(--border); font-size: 0.65rem; font-weight: 600; color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px; }
+    .cs-verified { display: inline-flex; align-items: center; gap: 5px; padding: 2px 8px; border: 1px solid var(--border); font-size: 0.63rem; font-weight: 600; color: var(--text-muted); letter-spacing: 0.08em; text-transform: uppercase; margin-left: 6px; }
+    .cs-verified svg { flex-shrink: 0; }
+    .cs-body { padding: 24px 28px; }
+    .cs-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); margin-bottom: 20px; border: 1px solid var(--border); }
+    .cs-metric { text-align: center; padding: 12px 8px; background: var(--bg-secondary); }
+    .cs-metric-value { font-size: 1.3rem; font-weight: 900; color: var(--text-primary); letter-spacing: -0.03em; }
+    .cs-metric-label { font-size: 0.68rem; color: var(--text-muted); margin-top: 3px; letter-spacing: 0.02em; }
+    @media (max-width: 900px) { .cs-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) { .cs-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<nav class="nav scrolled" id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="HarmoniQ Technologies" class="nav-logo-img" /></a>
+      <div class="nav-links">
+        <a href="how-it-works.html" class="nav-link">How It Works</a>
+        <a href="roi-calculator.html" class="nav-link">ROI Calculator</a>
+        <a href="case-studies.html" class="nav-link active">Case Studies</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blog.html" class="nav-link">Insights</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+      </div>
+      <div class="nav-actions">
+        <a href="tel:02034944044" class="nav-phone"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>020 3494 4044</a>
+        <a href="contact.html" class="btn btn-secondary btn-sm">Contact</a>
+        <a href="contact.html#demo" class="btn btn-primary btn-sm">Talk to an Engineer</a>
+      </div>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="how-it-works.html">How It Works</a><a href="roi-calculator.html">ROI Calculator</a>
+  <a href="case-studies.html">Case Studies</a><a href="about.html">About</a>
+  <a href="faq.html">FAQ</a>
+  <a href="tel:02034944044" style="font-weight:600; color: var(--accent-light); margin-top:8px;">020 3494 4044</a>
+  <a href="contact.html#demo" class="btn btn-primary" style="margin-top:8px">Talk to an Engineer</a>
+</div>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner">
+      <div class="eyebrow">Results</div>
+      <h1 class="display-2">Real Sites. <span class="accent">Real Savings.</span></h1>
+      <p>120+ deployments across Europe, the Middle East, and North America. Here are a selection of real-world results from our installed base.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Stats Banner -->
+<div class="stats-bar">
+  <div class="container">
+    <div class="stats-bar-inner">
+      <div class="stat-item"><div class="stat-number accent">120+</div><div class="stat-desc">Sites Deployed</div></div>
+      <div class="stat-item"><div class="stat-number accent">1,240+</div><div class="stat-desc">Units Installed</div></div>
+      <div class="stat-item"><div class="stat-number accent">45M+</div><div class="stat-desc">Operating Hours</div></div>
+      <div class="stat-item"><div class="stat-number accent">10–25%</div><div class="stat-desc">Energy Savings Proven</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Case Studies Grid -->
+<section class="section">
+  <div class="container">
+    <div class="cs-grid">
+
+      <div class="cs-card reveal">
+        <div class="cs-header">
+          <div class="cs-industry-tag">Cold Storage</div><span class="cs-verified"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Metered baseline</span>
+          <h3 class="h3" style="margin-bottom: 6px;">Global Cold Chain Logistics Provider</h3>
+          <p style="font-size: 0.82rem; color: var(--text-secondary);">Multi-site deployment across 8 refrigerated distribution centres in the UK and Netherlands</p>
+        </div>
+        <div class="cs-body">
+          <div class="cs-metrics">
+            <div class="cs-metric"><div class="cs-metric-value">22%</div><div class="cs-metric-label">Energy Saved</div></div>
+            <div class="cs-metric"><div class="cs-metric-value">$1.8M</div><div class="cs-metric-label">Annual Saving</div></div>
+            <div class="cs-metric"><div class="cs-metric-value">14mo</div><div class="cs-metric-label">Payback</div></div>
+          </div>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">"The savings exceeded our projections. Refrigeration compressors are running cooler, maintenance callouts are down 40%, and the payback was faster than any energy project we've undertaken."</p>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 12px; font-style: italic;">— VP Operations, Lineage Logistics</p>
+        </div>
+      </div>
+
+      <div class="cs-card reveal">
+        <div class="cs-header">
+          <div class="cs-industry-tag">Oil & Gas</div><span class="cs-verified"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Metered baseline</span>
+          <h3 class="h3" style="margin-bottom: 6px;">Midstream Pipeline Operations</h3>
+          <p style="font-size: 0.82rem; color: var(--text-secondary);">Pump station network across Texas and Oklahoma with 24/7 high-load motor operations</p>
+        </div>
+        <div class="cs-body">
+          <div class="cs-metrics">
+            <div class="cs-metric"><div class="cs-metric-value">19%</div><div class="cs-metric-label">Energy Saved</div></div>
+            <div class="cs-metric"><div class="cs-metric-value">$4.2M</div><div class="cs-metric-label">Annual Saving</div></div>
+            <div class="cs-metric"><div class="cs-metric-value">18mo</div><div class="cs-metric-label">Payback</div></div>
+          </div>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">"Power factor went from 0.78 to 0.99. Pump motor temperatures dropped measurably. We've eliminated utility penalty charges entirely and deferred $12M in planned motor replacements."</p>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 12px; font-style: italic;">— Energy Director, Plains All American</p>
+        </div>
+      </div>
+
+      <div class="cs-card reveal">
+        <div class="cs-header">
+          <div class="cs-industry-tag">Telecom</div><span class="cs-verified"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Metered baseline</span>
+          <h3 class="h3" style="margin-bottom: 6px;">National Telecom Infrastructure</h3>
+          <p style="font-size: 0.82rem; color: var(--text-secondary);">Network of 45 switching centres and data facilities across the Southern United States</p>
+        </div>
+        <div class="cs-body">
+          <div class="cs-metrics">
+            <div class="cs-metric"><div class="cs-metric-value">14%</div><div class="cs-metric-label">Energy Saved</div></div>
+            <div class="cs-metric"><div class="cs-metric-value">$6.1M</div><div class="cs-metric-label">Annual Saving</div></div>
+            <div class="cs-metric"><div class="cs-metric-value">22mo</div><div class="cs-metric-label">Payback</div></div>
+          </div>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">"We deployed across our 45 highest-consumption sites in a single programme. The savings are consistent and the software dashboard gives us visibility we didn't have before."</p>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 12px; font-style: italic;">— Senior VP Infrastructure, AT&T</p>
+        </div>
+      </div>
+
+      <div class="cs-card reveal">
+        <div class="cs-header">
+          <div class="cs-industry-tag">Manufacturing</div><span class="cs-verified"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Metered baseline</span>
+          <h3 class="h3" style="margin-bottom: 6px;">Food & Beverage Manufacturing Facility</h3>
+          <p style="font-size: 0.82rem; color: var(--text-secondary);">Single large production site in Belgium with extensive conveyor, pump, and HVAC loads</p>
+        </div>
+        <div class="cs-body">
+          <div class="cs-metrics">
+            <div class="cs-metric"><div class="cs-metric-value">17%</div><div class="cs-metric-label">Energy Saved</div></div>
+            <div class="cs-metric"><div class="cs-metric-value">$890k</div><div class="cs-metric-label">Annual Saving</div></div>
+            <div class="cs-metric"><div class="cs-metric-value">20mo</div><div class="cs-metric-label">Payback</div></div>
+          </div>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">"We were sceptical at first — we'd tried other solutions without meaningful results. HarmoniQ delivered 17% savings from day one, verified against our metered baseline."</p>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 12px; font-style: italic;">— Plant Energy Manager, Nestlé</p>
+        </div>
+      </div>
+
+      <div class="cs-card reveal">
+        <div class="cs-header">
+          <div class="cs-industry-tag">Water & Utilities</div><span class="cs-verified"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Metered baseline</span>
+          <h3 class="h3" style="margin-bottom: 6px;">Municipal Water Treatment Complex</h3>
+          <p style="font-size: 0.82rem; color: var(--text-secondary);">Large wastewater treatment plant in France with extensive pump and aeration motor loads</p>
+        </div>
+        <div class="cs-body">
+          <div class="cs-metrics">
+            <div class="cs-metric"><div class="cs-metric-value">21%</div><div class="cs-metric-label">Energy Saved</div></div>
+            <div class="cs-metric"><div class="cs-metric-value">$1.2M</div><div class="cs-metric-label">Annual Saving</div></div>
+            <div class="cs-metric"><div class="cs-metric-value">16mo</div><div class="cs-metric-label">Payback</div></div>
+          </div>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">"Aeration blower motors are our biggest energy cost. HarmoniQ reduced our consumption by 21% while improving motor reliability. A remarkable result for a public utility."</p>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 12px; font-style: italic;">— Operations Director, SUEZ Water Technologies</p>
+        </div>
+      </div>
+
+      <div class="cs-card reveal">
+        <div class="cs-header">
+          <div class="cs-industry-tag">Contract Manufacturing</div><span class="cs-verified"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Metered baseline</span>
+          <h3 class="h3" style="margin-bottom: 6px;">Global Electronics Manufacturing</h3>
+          <p style="font-size: 0.82rem; color: var(--text-secondary);">High-precision electronics manufacturing campus with sensitive equipment and strict power quality requirements</p>
+        </div>
+        <div class="cs-body">
+          <div class="cs-metrics">
+            <div class="cs-metric"><div class="cs-metric-value">12%</div><div class="cs-metric-label">Energy Saved</div></div>
+            <div class="cs-metric"><div class="cs-metric-value">$2.3M</div><div class="cs-metric-label">Annual Saving</div></div>
+            <div class="cs-metric"><div class="cs-metric-value">24mo</div><div class="cs-metric-label">Payback</div></div>
+          </div>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">"Beyond the energy savings, HarmoniQ eliminated a recurring harmonic interference issue that was causing yield losses on our production line. The ROI is far greater than the energy bill alone."</p>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 12px; font-style: italic;">— Chief Engineer, Flex Ltd</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="resp-2col reveal" style="margin-top: 48px; border: 1px solid var(--border); gap: 0;">
+      <div style="padding: 32px 36px; border-right: 1px solid var(--border);">
+        <div style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px;">Measurement Methodology</div>
+        <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">All savings figures are calculated by comparing metered kWh consumption before and after installation — on the same load profile and operating conditions. No modelling, no estimates. Results are verified by the customer's own energy team before any commercial commitment.</p>
+      </div>
+      <div style="padding: 32px 36px;">
+        <div style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px;">More Case Studies Available</div>
+        <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 20px;">We have detailed technical case studies for many of our 120+ deployments. Request the specific industry or technology area most relevant to your facility.</p>
+        <a href="contact.html" class="btn btn-outline btn-sm">Request Industry Case Studies</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-lg cta-section">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <h2 class="display-2">Your Facility Could Be <span class="accent">Next</span></h2>
+      <p>Join 120+ sites already benefiting from HarmoniQ. Book your free on-site demonstration today.</p>
+      <div class="cta-actions">
+        <a href="tel:02034944044" class="btn btn-primary btn-lg">Call 020 3494 4044</a>
+        <a href="roi-calculator.html" class="btn btn-secondary btn-lg">Calculate Your Savings</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="nav-logo" style="display: inline-flex;"><img src="assets/logo.png" alt="HarmoniQ Technologies" class="nav-logo-img" /></a><p>Patented power optimization. 10–25% energy savings across 120+ sites globally.</p></div>
+      <div class="footer-col"><h5>Product</h5><ul><li><a href="how-it-works.html">How It Works</a></li><li><a href="roi-calculator.html">ROI Calculator</a></li><li><a href="case-studies.html">Case Studies</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About</a></li><li><a href="partners.html">Partners</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Resources</h5><ul><li><a href="faq.html">FAQ</a></li><li><a href="blog.html">Insights</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 HarmoniQ Technologies. All rights reserved.</span><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms</a></div></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

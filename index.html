@@ -1,15 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HarmoniQ Technologies — Power Optimization That Pays For Itself</title>
+  <meta name="description" content="HarmoniQ's patented hardware saves industrial facilities 10–25% on electricity costs by eliminating heat waste and achieving perfect power quality." />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>HarmoniQ Technologies Website</title>
-    </head>
+<!-- ── Navigation ────────────────────────────────────────────── -->
+<nav class="nav" id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="HarmoniQ Technologies" class="nav-logo-img" /></a>
+      <div class="nav-links">
+        <a href="how-it-works.html" class="nav-link">How It Works</a>
+        <a href="roi-calculator.html" class="nav-link">ROI Calculator</a>
+        <a href="case-studies.html" class="nav-link">Case Studies</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blog.html" class="nav-link">Insights</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+      </div>
+      <div class="nav-actions">
+        <a href="tel:02034944044" class="nav-phone"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>020 3494 4044</a>
+        <a href="contact.html" class="btn btn-secondary btn-sm">Contact</a>
+        <a href="contact.html#demo" class="btn btn-primary btn-sm">Talk to an Engineer</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+<div class="mobile-nav" id="mobileNav">
+  <a href="how-it-works.html">How It Works</a>
+  <a href="roi-calculator.html">ROI Calculator</a>
+  <a href="case-studies.html">Case Studies</a>
+  <a href="about.html">About</a>
+  <a href="blog.html">Insights</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+  <a href="tel:02034944044" style="font-weight:600; color: var(--accent-light); margin-top:8px;">020 3494 4044</a>
+  <a href="contact.html#demo" class="btn btn-primary" style="margin-top:8px">Talk to an Engineer</a>
+</div>
+
+<!-- ── Hero ──────────────────────────────────────────────────── -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-content animate-up">
+      <div class="hero-label">Patented Power Optimization Technology</div>
+      <h1 class="display-1">
+        Stop Paying For
+        <span class="line-accent">Electricity You Waste</span>
+      </h1>
+      <p class="hero-sub">
+        HarmoniQ's patented hardware eliminates heat waste from your electrical network —
+        delivering 10–25% energy savings, perfect power factor, and equipment that lasts twice as long.
+      </p>
+      <div class="hero-actions">
+        <a href="tel:02034944044" class="btn btn-primary btn-lg">
+          Call 020 3494 4044
+        </a>
+        <a href="contact.html#demo" class="btn btn-secondary btn-lg">
+          Book a Free Demo
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-value">120+</div>
+          <div class="hero-stat-label">Sites Deployed</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">1,240+</div>
+          <div class="hero-stat-label">Units Operating</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">45M+</div>
+          <div class="hero-stat-label">Operating Hours</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">10–25%</div>
+          <div class="hero-stat-label">Average Energy Savings</div>
+        </div>
+      </div>
+      <p style="margin-top: 20px; font-size: 0.75rem; color: var(--dark-muted); letter-spacing: 0.04em;">All savings figures independently metered against pre-installation baseline on every deployment.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── The Problem ────────────────────────────────────────────── -->
+<section class="section problem-section" id="problem">
+  <div class="container">
+    <div class="problem-grid">
+      <div>
+        <div class="eyebrow">The Problem</div>
+        <h2 class="display-2" style="margin-bottom:20px">
+          You're Paying For Power <span class="accent">You Never Use</span>
+        </h2>
+        <p class="body-lg text-muted" style="margin-bottom:36px">
+          Every electrical facility experiences invisible losses. Harmonic distortions,
+          reactive power, and poor power factor mean 10–25% of every electricity bill
+          is pure waste — converted silently into heat.
+        </p>
+        <div class="problem-points">
+          <div class="problem-point reveal">
+            <div class="problem-point-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 3z"/></svg></div>
+            <div>
+              <h4>Wasted Energy = Higher Bills</h4>
+              <p>Poor power quality means you pay for reactive energy that does no useful work. Utilities charge penalties on top.</p>
+            </div>
+          </div>
+          <div class="problem-point reveal">
+            <div class="problem-point-icon" style="background:#FEF3C7;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg></div>
+            <div>
+              <h4>Equipment Overheats &amp; Degrades</h4>
+              <p>Harmonic distortions and excess heat stress motors, drives, and transformers — shortening lifespan by up to 50%.</p>
+            </div>
+          </div>
+          <div class="problem-point reveal">
+            <div class="problem-point-icon" style="background:#DCFCE7;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div>
+            <div>
+              <h4>Unnecessary Carbon Footprint</h4>
+              <p>Every kilowatt-hour wasted is CO₂ emitted for nothing. Poor power quality silently inflates your Scope 2 emissions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="problem-visual">
+          <div class="power-diagram">
+            <div class="power-diagram-title">Your Electricity Bill — Where It Goes</div>
+            <div class="power-bar-wrap">
+              <div class="power-bar-label">
+                <span>Useful energy (productive work)</span>
+                <span class="pct">75 kW</span>
+              </div>
+              <div class="power-bar-bg">
+                <div class="power-bar-fill useful" style="width:75%"></div>
+              </div>
+            </div>
+            <div class="power-bar-wrap">
+              <div class="power-bar-label">
+                <span>Wasted as heat (reactive power)</span>
+                <span style="color:#DC2626; font-weight:700;">25 kVAR</span>
+              </div>
+              <div class="power-bar-bg">
+                <div class="power-bar-fill wasted" style="width:25%"></div>
+              </div>
+            </div>
+            <div style="margin-top:28px; padding:18px; background:var(--bg-primary); border:1px solid var(--border);">
+              <div style="font-size:0.65rem; color:var(--text-muted); margin-bottom:8px; letter-spacing:0.12em; text-transform:uppercase; font-weight:600;">Power Factor Formula</div>
+              <div style="font-size:1.4rem; font-weight:900; color:var(--accent); font-family:'JetBrains Mono',monospace; letter-spacing:-0.02em;">PF = kW ÷ kVA = 0.75</div>
+              <div style="font-size:0.82rem; color:var(--text-secondary); margin-top:6px;">You pay for 100 kVA. Only 75 kW does actual work.</div>
+            </div>
+            <div style="margin-top:12px; padding:14px 16px; background:rgba(220,38,38,0.04); border:1px solid rgba(220,38,38,0.15);">
+              <div style="font-size:0.82rem; color:#B91C1C; font-weight:500;">Utilities charge penalties when power factor falls below 0.95</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── The Solution ───────────────────────────────────────────── -->
+<section class="section solution-section" id="solution">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="eyebrow">The Solution</div>
+      <h2 class="display-2">How HarmoniQ <span class="accent">Works</span></h2>
+      <p>We don't just filter out waste — we transform it into useful energy. Our patented technology injects precisely calibrated electromagnetic waveforms across your entire electrical network.</p>
+    </div>
+
+    <div class="solution-grid">
+      <div class="solution-steps">
+        <div class="solution-step reveal">
+          <div class="step-num">01</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M2 12h3l3-8 4 16 3-8h7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="step-content">
+            <h4>Filters &amp; Stabilises Waveforms</h4>
+            <p>Eliminates harmonic distortions, stabilising current to a pure 50/60Hz sine wave across your entire network.</p>
+          </div>
+        </div>
+        <div class="solution-step reveal">
+          <div class="step-num">02</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="step-content">
+            <h4>Converts Waste Into Usable Power</h4>
+            <p>Previously unusable reactive energy is transformed into real working power — not discarded.</p>
+          </div>
+        </div>
+        <div class="solution-step reveal">
+          <div class="step-num">03</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="step-content">
+            <h4>Raises Power Factor to Near-Perfect</h4>
+            <p>Eliminates utility penalty charges and reduces total apparent power demand.</p>
+          </div>
+        </div>
+        <div class="solution-step reveal">
+          <div class="step-num">04</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="step-content">
+            <h4>Cuts Heat &amp; Extends Equipment Life</h4>
+            <p>Reducing operating temperature by up to 20°C doubles motor and transformer lifespan (IEEE Arrhenius law).</p>
+          </div>
+        </div>
+        <div class="solution-step reveal">
+          <div class="step-num">05</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div class="step-content">
+            <h4>Zero-Downtime Installation</h4>
+            <p>Installed in parallel — no process interruption, no rewiring, no operational disruption.</p>
+          </div>
+        </div>
+        <div class="solution-step reveal">
+          <div class="step-num">06</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="step-content">
+            <h4>Works With All Sub-600V Equipment</h4>
+            <p>Compatible with motors, drives, servers, HVAC, lighting, and all linear and non-linear loads.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="solution-visual">
+          <div class="waveform-label">
+            <span class="dot-bad"></span>
+            <span style="color:var(--text-muted)">Without HarmoniQ — Noisy Current</span>
+          </div>
+          <div class="waveform-svg-wrap">
+            <svg viewBox="0 0 400 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%">
+              <path d="M0 40 Q15 10 30 40 Q38 55 45 30 Q50 15 60 40 Q65 55 70 35 Q80 5 95 40 Q105 60 110 35 Q120 10 135 40 Q145 60 155 35 Q165 15 180 40 Q190 60 200 38 Q210 18 225 40 Q235 60 245 35 Q255 12 270 40 Q280 58 290 36 Q300 15 315 40 Q325 60 335 36 Q345 14 360 40 Q370 58 380 36 Q390 16 400 40"
+                stroke="#DC2626" stroke-width="2" opacity="0.8"/>
+              <path d="M0 40 Q50 5 100 40 Q150 75 200 40 Q250 5 300 40 Q350 75 400 40"
+                stroke="#6B7280" stroke-width="1" stroke-dasharray="4 4"/>
+            </svg>
+          </div>
+          <div class="waveform-arrow">↓</div>
+          <div class="waveform-label" style="margin-top:16px">
+            <span class="dot-good"></span>
+            <span style="color:var(--accent)">With HarmoniQ — Pure 50/60Hz</span>
+          </div>
+          <div class="waveform-svg-wrap">
+            <svg viewBox="0 0 400 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%">
+              <path d="M0 40 Q50 5 100 40 Q150 75 200 40 Q250 5 300 40 Q350 75 400 40"
+                stroke="#1A7A44" stroke-width="2.5"/>
+              <path d="M0 40 Q50 5 100 40 Q150 75 200 40 Q250 5 300 40 Q350 75 400 40"
+                stroke="#1A7A44" stroke-width="10" opacity="0.05"/>
+            </svg>
+          </div>
+
+          <div style="margin-top:20px; display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--border);">
+            <div style="padding:16px; border-right:1px solid var(--border);">
+              <div style="font-size:0.65rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:4px;">Without HarmoniQ</div>
+              <div style="font-size:0.8rem; color:#B91C1C; font-weight:600;">Heat waste + degradation</div>
+            </div>
+            <div style="padding:16px;">
+              <div style="font-size:0.65rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:4px;">With HarmoniQ</div>
+              <div style="font-size:0.8rem; color:var(--accent); font-weight:600;">Pure power, zero waste</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:20px; text-align:center;">
+          <a href="how-it-works.html" class="btn btn-outline">
+            Full Technical Deep-Dive
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Measured Impact ─────────────────────────────────────────── -->
+<section class="section benefits-section" id="benefits">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; margin-bottom:64px;">
+      <div>
+        <div class="eyebrow">Measured Impact</div>
+        <h2 class="display-2">Five outcomes, <span class="accent">verified on your site</span></h2>
+      </div>
+      <div style="padding-top:8px;">
+        <p class="body-lg text-muted">From the day of installation, your facility operates differently. Every metric below is measured live during your free on-site demonstration.</p>
+      </div>
+    </div>
+
+    <div class="metrics-list">
+      <div class="metric-row reveal">
+        <div class="metric-val">10–25%</div>
+        <div class="metric-content">
+          <h4>Energy cost reduction</h4>
+          <p>Immediate reduction in electricity consumption, verified across 120+ sites globally. Measurable on your first utility bill after installation.</p>
+        </div>
+      </div>
+      <div class="metric-row reveal">
+        <div class="metric-val">2×</div>
+        <div class="metric-content">
+          <h4>Equipment lifespan</h4>
+          <p>Per the IEEE Arrhenius Law: every 10°C reduction in operating temperature doubles insulation life. HarmoniQ reduces temperatures by up to 20°C.</p>
+        </div>
+      </div>
+      <div class="metric-row reveal">
+        <div class="metric-val">100%</div>
+        <div class="metric-content">
+          <h4>Power factor penalty elimination</h4>
+          <p>Perfect power factor means zero reactive energy surcharges. Utility penalties — which can represent 10–15% of bills — disappear immediately.</p>
+        </div>
+      </div>
+      <div class="metric-row reveal">
+        <div class="metric-val">↓60%</div>
+        <div class="metric-content">
+          <h4>Reduction in maintenance burden</h4>
+          <p>Cooler, cleaner power means fewer breakdowns, less unplanned downtime, and significantly lower OPEX across all electrical equipment.</p>
+        </div>
+      </div>
+      <div class="metric-row reveal">
+        <div class="metric-val">↓CO₂</div>
+        <div class="metric-content">
+          <h4>Scope 2 emissions reduction</h4>
+          <p>Every kilowatt-hour saved is CO₂ not emitted. HarmoniQ's platform automatically calculates and reports carbon avoided for ESG disclosures.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── How to Get Started ──────────────────────────────────────── -->
+<section class="section getstarted-section" id="getstarted">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="eyebrow">Risk-Free Process</div>
+      <h2 class="display-2">See It Work Before <span style="color:var(--accent-light)">You Commit</span></h2>
+      <p>We prove the savings on your site with your equipment. No upfront cost. No downtime. No obligation.</p>
+    </div>
+    <div class="steps-flow">
+      <div class="flow-step reveal">
+        <div class="flow-step-num">01</div>
+        <h4>We Install On-Site</h4>
+        <p>Our engineers deploy HarmoniQ hardware directly on your electrical network — in hours, not days. Zero disruption to operations.</p>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-step-num">02</div>
+        <h4>We Show You the Results</h4>
+        <p>Live measurement of energy savings, power factor improvement, and heat reduction. You see the numbers in real time.</p>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-step-num">03</div>
+        <h4>Choose Your Model</h4>
+        <p>Happy with the results? Choose rental or purchase — flexible commercial terms designed to fit your capital structure.</p>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-step-num">04</div>
+        <h4>Pay Out of Savings</h4>
+        <p>HarmoniQ pays for itself from the energy savings it generates. Most sites are cashflow-positive from day one.</p>
+      </div>
+    </div>
+    <div class="getstarted-cta reveal">
+      <a href="contact.html#demo" class="btn btn-primary btn-lg">
+        Book Your Free On-Site Demo
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <p style="margin-top:12px; font-size:0.82rem;">No commitment required. Results measured live on your site.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Industries ─────────────────────────────────────────────── -->
+<section class="section industries-section" id="industries">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; margin-bottom:48px;">
+      <div>
+        <div class="eyebrow">Sectors</div>
+        <h2 class="display-2">Works across <span class="accent">every industry</span></h2>
+      </div>
+      <div>
+        <p class="text-muted" style="font-size:1rem; line-height:1.7;">Any facility with significant sub-600V electrical load benefits from HarmoniQ. If you use motors, drives, HVAC, or servers — you have waste to recover.</p>
+      </div>
+    </div>
+    <div class="industries-grid reveal">
+      <div class="industry-item"><div class="industry-label">Manufacturing</div><div class="industry-sub">Heavy motor &amp; drive loads — typically 15–22% savings</div></div>
+      <div class="industry-item"><div class="industry-label">Large Buildings &amp; Offices</div><div class="industry-sub">HVAC, lifts, and lighting loads drive significant reactive waste</div></div>
+      <div class="industry-item"><div class="industry-label">Mining &amp; Extraction</div><div class="industry-sub">High-inertia motors running 24/7 — ideal conditions for HarmoniQ</div></div>
+      <div class="industry-item"><div class="industry-label">Water &amp; Utilities</div><div class="industry-sub">Pump and aeration loads with predictable, high-volume consumption</div></div>
+      <div class="industry-item"><div class="industry-label">Oil &amp; Gas Operations</div><div class="industry-sub">Pump stations and compressors with extreme motor loads</div></div>
+      <div class="industry-item"><div class="industry-label">Airports &amp; Ports</div><div class="industry-sub">Complex mixed loads — from baggage handling to ground power</div></div>
+      <div class="industry-item"><div class="industry-label">Telecom Infrastructure</div><div class="industry-sub">Switching centres and towers with continuous high base loads</div></div>
+      <div class="industry-item"><div class="industry-label">Data Centers</div><div class="industry-sub">Cooling systems and UPS loads where every PUE point matters</div></div>
+      <div class="industry-item"><div class="industry-label">Cold Storage</div><div class="industry-sub">Refrigeration compressors running non-stop — 20%+ savings common</div></div>
+      <div class="industry-item"><div class="industry-label">Healthcare</div><div class="industry-sub">HVAC, imaging equipment, and critical power quality requirements</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Clients ─────────────────────────────────────────────────── -->
+<section class="section clients-section" id="clients">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="eyebrow">Trusted By</div>
+      <h2 class="display-2">Companies That Run on <span class="accent">HarmoniQ</span></h2>
+      <p>From Fortune 500 industrials to global logistics leaders — the world's most energy-intensive operations.</p>
+    </div>
+
+    <div class="clients-logos reveal">
+      <div class="client-logo"><span class="client-logo-text">AT&amp;T</span></div>
+      <div class="client-logo"><span class="client-logo-text">Nestlé</span></div>
+      <div class="client-logo"><span class="client-logo-text">Amazon Logistics</span></div>
+      <div class="client-logo"><span class="client-logo-text">SUEZ</span></div>
+      <div class="client-logo"><span class="client-logo-text">Schlumberger</span></div>
+      <div class="client-logo"><span class="client-logo-text">Lineage</span></div>
+      <div class="client-logo"><span class="client-logo-text">Plains</span></div>
+      <div class="client-logo"><span class="client-logo-text">WaterBridge</span></div>
+      <div class="client-logo"><span class="client-logo-text">Flex</span></div>
+      <div class="client-logo"><span class="client-logo-text">Pioneer</span></div>
+    </div>
+
+    <div class="clients-stats reveal">
+      <div class="client-stat">
+        <div class="client-stat-number">120+</div>
+        <div class="client-stat-label">Sites Deployed</div>
+      </div>
+      <div class="client-stat">
+        <div class="client-stat-number">1,240+</div>
+        <div class="client-stat-label">Units Installed</div>
+      </div>
+      <div class="client-stat">
+        <div class="client-stat-number">45M+</div>
+        <div class="client-stat-label">Operating Hours</div>
+      </div>
+      <div class="client-stat">
+        <div class="client-stat-number">10–25%</div>
+        <div class="client-stat-label">Energy Savings Delivered</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Team Pedigree ───────────────────────────────────────────── -->
+<section class="section team-section" id="team">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; margin-bottom:48px;">
+      <div>
+        <div class="eyebrow">Our Team</div>
+        <h2 class="display-2">Built By <span class="accent">World-Class</span> Operators</h2>
+      </div>
+      <div>
+        <p class="text-muted" style="font-size:1rem; line-height:1.7;">Our leadership team brings deep industrial, financial, and scientific expertise from the world's leading institutions.</p>
+        <div style="margin-top:24px;">
+          <a href="about.html" class="btn btn-secondary btn-sm">Meet the Team</a>
+        </div>
+      </div>
+    </div>
+    <div class="pedigree-logos reveal">
+      <div class="pedigree-logo"><span class="pedigree-logo-text">KKR</span></div>
+      <div class="pedigree-logo"><span class="pedigree-logo-text">Partners Group</span></div>
+      <div class="pedigree-logo"><span class="pedigree-logo-text">MIT</span></div>
+      <div class="pedigree-logo"><span class="pedigree-logo-text">University of Cambridge</span></div>
+      <div class="pedigree-logo"><span class="pedigree-logo-text">Schneider Electric</span></div>
+      <div class="pedigree-logo"><span class="pedigree-logo-text">Morgan Stanley</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Final CTA ───────────────────────────────────────────────── -->
+<section class="section-lg cta-section">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <div class="eyebrow">Zero Risk. Real Results.</div>
+      <h2 class="display-2">Ready to Eliminate <span class="accent">Your Energy Waste?</span></h2>
+      <p>Book a free on-site demo. We install, we measure, we show you the numbers. You only pay if you're satisfied.</p>
+      <div class="cta-actions">
+        <a href="tel:02034944044" class="btn btn-primary btn-lg">Call 020 3494 4044</a>
+        <a href="contact.html#demo" class="btn btn-secondary btn-lg">Book a Free Demo</a>
+      </div>
+      <p class="cta-note">020 3494 4044 &nbsp;&middot;&nbsp; enquiries@harmoniqenergy.com</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ──────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="display:inline-flex;"><img src="assets/logo.png" alt="HarmoniQ Technologies" class="nav-logo-img" /></a>
+        <p>Patented power optimization technology that eliminates heat waste and delivers 10–25% energy savings — proven across 120+ industrial sites globally.</p>
+        <p style="margin-top:12px; font-size:0.78rem; color:var(--dark-muted);">020 3494 4044<br>enquiries@harmoniqenergy.com</p>
+      </div>
+      <div class="footer-col">
+        <h5>Product</h5>
+        <ul>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="how-it-works.html#hardware">Hardware</a></li>
+          <li><a href="how-it-works.html#software">Software</a></li>
+          <li><a href="roi-calculator.html">ROI Calculator</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#team">Team</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="blog.html">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html#demo">Book a Demo</a></li>
+          <li><a href="roi-calculator.html">Savings Calculator</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 HarmoniQ Technologies. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Patents</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
